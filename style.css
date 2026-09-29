@@ -111,7 +111,7 @@ button {
 
 
 /* NEW: Hover effect on project cards      */
-/* The transition property above (in .card) is what makes this animate smoothly instead of jumping  */                          */
+/* The transition property above (in .card) is what makes this animate smoothly instead of jumping  */
 
 
 .card:hover {
