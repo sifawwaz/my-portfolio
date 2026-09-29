@@ -1,6 +1,5 @@
-* {
-  box-sizing: border-box;
-}
+
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -10,7 +9,7 @@ body {
 
 header {
   background-color: #028090;
-  color: rgb(236, 8, 8);
+  color: white;
   padding: 20px;
   text-align: center;
 }
@@ -38,6 +37,7 @@ section {
   padding: 20px;
   flex: 1;
   min-width: 200px;
+  transition: transform 0.2s, box-shadow 0.2s; /* new. animates the hover lift below smoothly instead of snapping */
 }
 
 footer {
@@ -45,4 +45,76 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+}
+
+
+
+/* Nwe skill grid          */
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.skill {
+  background-color: #f4f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+
+
+/* New feature 2: Contact form */
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+button {
+  background-color: #028090;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+/*  Responsive layout (mobile)         */
+/* No HTML changes for this one — CSS only                       */
+
+@media (max-width: 600px) {
+  #projects {
+    flex-direction: column;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+/* NEW: Hover effect on project cards      */
+/* The transition property above (in .card) is what makes this animate smoothly instead of jumping  */                          */
+
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
