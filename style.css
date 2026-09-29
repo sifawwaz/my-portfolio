@@ -41,7 +41,7 @@ section {
 }
 
 footer {
-  background-color: #013a40;
+  background-color: #4cc812;
   color: white;
   text-align: center;
   padding: 15px;
@@ -49,7 +49,10 @@ footer {
 
 
 
-/* Nwe skill grid          */
+/* New skill grid        
+
+
+*/
 
 
 .skills-grid {
@@ -97,7 +100,7 @@ button {
 
 
 /*  Responsive layout (mobile)         */
-/* No HTML changes for this one — CSS only                       */
+
 
 @media (max-width: 600px) {
   #projects {
@@ -110,8 +113,8 @@ button {
 
 
 
-/* NEW: Hover effect on project cards      */
-/* The transition property above (in .card) is what makes this animate smoothly instead of jumping  */
+/* Hover effect on project cards      */
+/* thetransition property above (in .card) is what makes this animate smoothly instead of jumping  */
 
 
 .card:hover {
